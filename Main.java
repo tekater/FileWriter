@@ -8,10 +8,14 @@ public class Main {
 
         File file = new File("C:\\Users\\user\\file.txt");
         FileWriter writer = new FileWriter(file);
-        writer.write("Have a good day! ");
+        writer.write("Have a good day!" + " ");
         writer.write("Mighty Java programmer!");
 
         writer.close();
+
+        FileWriter writer1 = new FileWriter(file,true);
+        writer1.write("\nThank you!");
+        writer1.close();
         // cat file.txt
     }
 }
